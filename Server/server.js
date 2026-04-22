@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.json());
 
 // Routes
-// app.use('/api/users', require('./routes/userRoutes'));
+app.use("/api/income", require("./routes/incomeRoutes"));
 
 app.get("/", (req, res) => {
   res.send("Cashly API is running...");
